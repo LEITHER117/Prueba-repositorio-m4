@@ -9,7 +9,8 @@ public class Cubo : MonoBehaviour
         new Vector3(0, 0, 0), //vertice0
         new Vector3(1, 0, 0), //vertice1
         new Vector3(1, 1, 0), //vertice2
-        new Vector3(0, 1, 0), //vertice4
+        new Vector3(0, 1, 0), //vertice3
+        new Vector3(0, 1, 1), //vertice4
         new Vector3(1, 1, 1), //vertice5
         new Vector3(1, 0, 1), //vertice6
         new Vector3(0, 0, 1), //vertice7
