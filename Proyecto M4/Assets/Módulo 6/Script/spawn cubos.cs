@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cubespawner : MonoBehaviour
+public class spawncubos : MonoBehaviour
 {
-
     public GameObject PrefabCubo;
     public List<GameObject> ListaDeCubos;
     public float FactorDeEscalamiento;
-    public int numCubos=0;
+    public int numCubos = 0;
 
 
     // Start is called before the first frame update
@@ -23,7 +22,7 @@ public class Cubespawner : MonoBehaviour
         numCubos++;
         GameObject tempGameObject = Instantiate<GameObject>(PrefabCubo);
         tempGameObject.name = "CuboNumero" + numCubos;
-        Color c = new Color(Random.value,Random.value, Random.value);
+        Color c = new Color(Random.value, Random.value, Random.value);
         tempGameObject.GetComponent<MeshRenderer>().material.color = c;
         tempGameObject.transform.position = Random.insideUnitSphere;
 
@@ -35,7 +34,7 @@ public class Cubespawner : MonoBehaviour
             scale *= FactorDeEscalamiento;
             go.transform.localScale = Vector3.one * scale;
 
-            if(scale <= 0.1)
+            if (scale <= 0.1)
             {
                 ObjetosParaEliminar.Add(go);
             }
