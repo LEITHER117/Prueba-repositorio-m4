@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cuboOnEnable : MonoBehaviour
+public class cuboOnDisabl : MonoBehaviour
 {
     public GameObject PrefabCubo;
     // Start is called before the first frame update
@@ -17,7 +17,7 @@ public class cuboOnEnable : MonoBehaviour
         
     }
 
-    private void OnEnable()
+    private void OnDisable()
     {
         GameObject tempGameObject = Instantiate<GameObject>(PrefabCubo);
     }
