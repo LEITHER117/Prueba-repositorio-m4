@@ -8,8 +8,8 @@ public class variablesBooleanas : MonoBehaviour
     bool variable2;
     bool variable3;
     int valor1 = 5;
-    int limiteInferior =-5;
-    int limiteSuperior =5;
+    int limiteInferior =0;
+    int limiteSuperior =1;
     
     enum SeleccionColor
     {
@@ -96,6 +96,7 @@ public class variablesBooleanas : MonoBehaviour
 
 
     }
+   
 
     // Update is called once per frame
     void Update()
@@ -103,3 +104,4 @@ public class variablesBooleanas : MonoBehaviour
         
     }
 }
+
